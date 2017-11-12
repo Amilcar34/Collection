@@ -1,4 +1,4 @@
-package Set;
+package Set.HashSet;
 
 public final class Empleados {
 

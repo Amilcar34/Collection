@@ -1,8 +1,14 @@
-package Set;
+package Set.HashSet;
 
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+/**
+ *Se hace una lista Set.HashSet ya que se requiere algo que procese rapido 
+ *y noes de prioridad en orden en que se vallan cargando los objetos
+ *
+ *Se instancia HashSet ya que no se quieren objetos duplicados
+ */
 
 public final class Test {
 
@@ -15,6 +21,7 @@ public final class Test {
 		Empleados e4 = new Empleados("Lorena", 321332168);
 		Empleados e5 = new Empleados("Laura", 5684354);
 		
+		
 		Set<Empleados> listaEmpleados = new HashSet<Empleados>();
 		
 		listaEmpleados.add(e1);
@@ -24,7 +31,7 @@ public final class Test {
 		listaEmpleados.add(e5);
 		
 		
-		//Muestro todos los obj del Set
+		//Muestro todos los obj del Set.HashSet
 		for (Iterator iterator = listaEmpleados.iterator(); iterator.hasNext();) {
 			Empleados empleados = (Empleados) iterator.next();
 			
@@ -33,7 +40,7 @@ public final class Test {
 		
 		System.out.println();
 		
-		//Itero el Set para buscar un obj en particular y eliminarlo
+		//Itero el Set.HashSet para buscar un obj en particular y eliminarlo
 		Iterator<Empleados> it = listaEmpleados.iterator();
 		
 		while (it.hasNext()) {
